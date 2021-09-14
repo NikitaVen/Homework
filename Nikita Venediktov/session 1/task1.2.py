@@ -2,10 +2,11 @@
 def characters_frequency(str):
     d = dict()
     for i in str:
-       if i.casefold() in d:
-           d[i.casefold()] += 1
+       _i = i.casefold()
+       if _i in d:
+           d[_i] += 1
        else:
-           d[i.casefold()] = 1
+           d[_i] = 1
     return d
 
 while(True):
